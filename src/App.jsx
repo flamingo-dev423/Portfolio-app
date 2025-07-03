@@ -58,7 +58,7 @@ const scaleOnHover = {
 const socials = [
   { Icon: FaBehance, url: "https://behance.net/iamrapha3l_" },
   { Icon: Twitter, url: "https://x.com/iamrapha3l_" },
-  { Icon: Linkedin, url: "https://www.linkedin.com/in/raphael-ogumba" },
+  { Icon: Linkedin, url: "https://www.linkedin.com/in/raphael-ogumba-543b6a234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
 ];
 
 const navigationItems = [
