@@ -409,18 +409,18 @@ export default function PortfolioLanding() {
         </AnimatePresence>
 
         {/* Hero Section */}
-        <section className="pt-32 pb-20 px-4 sm:px-6 relative overflow-hidden">
+        <section className="pt-48 pb-20 px-4 sm:px-6 relative overflow-hidden">
           <motion.div
             style={{ y }}
             className="absolute inset-0 bg-gradient-to-br from-gray-900/30 to-gray-800/20 pointer-events-none"
           />
           <div className="max-w-7xl mx-auto relative">
-            <div className="max-w-4xl text-center sm:text-left">
+            <div className="max-w-4xl sm:text-left">
               <motion.h1
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl heading-text-1 font-bold leading-tight mb-8"
+                className="text-5xl sm:text-5xl md:text-6xl lg:text-8xl heading-text-1 font-bold leading-tight mb-8"
               >
                 Hi, I'm Raphael. UI/UX Designer{" "}
                 <motion.span
@@ -453,7 +453,7 @@ export default function PortfolioLanding() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="flex justify-center sm:justify-start"
+                className="flex sm:justify-start"
               >
                 <Button
                   className="bg-white text-black hover:bg-gray-200 rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -487,7 +487,7 @@ export default function PortfolioLanding() {
           className="py-16 sm:py-20 px-4 sm:px-6"
         >
           <div className="max-w-7xl mx-auto">
-            <motion.div variants={fadeInUp} className="max-w-3xl mb-12 sm:mb-16 text-center sm:text-left">
+            <motion.div variants={fadeInUp} className="max-w-3xl mb-12 sm:mb-16 sm:text-left">
               <motion.h2
                 variants={fadeInUp}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl heading-text font-bold mb-6 sm:mb-8"
@@ -586,7 +586,7 @@ export default function PortfolioLanding() {
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 items-center">
               {/* Text Content */}
-              <motion.div variants={fadeInLeft} className="text-center lg:text-left">
+              <motion.div variants={fadeInLeft} className="lg:text-left">
                 <motion.h2
                   variants={fadeInUp}
                   className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl heading-text font-bold mb-6 sm:mb-8"
@@ -812,7 +812,7 @@ export default function PortfolioLanding() {
           viewport={{ once: true, margin: "-100px" }}
           className="py-20 px-6"
         >
-          <div className="max-w-7xl mx-auto text-center">
+          <div className="max-w-7xl mx-auto">
             <motion.h2 variants={fadeInUp} className="text-5xl heading-text md:text-6xl font-bold mb-8">
               Tools I Use
             </motion.h2>
@@ -965,114 +965,114 @@ export default function PortfolioLanding() {
 
         {/* Contact Section */}
         <motion.section
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, margin: "-100px" }}
-      className="py-16 sm:py-20 px-4 sm:px-6"
-      id="contact"
-    >
-      <div className="max-w-7xl mx-auto text-center">
-        <motion.h2
-          variants={fadeInUp}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl heading-text font-bold mb-6 sm:mb-8"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          className="py-16 sm:py-20 px-4 sm:px-6"
+          id="contact"
         >
-          {"Let's Work Together"}
-        </motion.h2>
-
-        <motion.p variants={fadeInUp} className="text-lg sm:text-xl paragraph-text text-gray-400 mb-8 sm:mb-12">
-          Have a project in mind? {"I'm"} just a message away.
-        </motion.p>
-
-        <motion.div
-          variants={staggerContainer}
-          className="flex flex-col sm:flex-row paragraph-text justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-12 mb-12 sm:mb-16"
-        >
-          {[
-            { icon: Users, text: "24/7 Full Time Support" },
-            { icon: Globe, text: "Available Worldwide" },
-          ].map((item, index) => (
-            <motion.div
-              key={index}
+          <div className="max-w-7xl mx-auto text-center">
+            <motion.h2
               variants={fadeInUp}
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-3"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl heading-text font-bold mb-6 sm:mb-8"
             >
-              <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
-              <span className="text-gray-300 text-sm sm:text-base">{item.text}</span>
-            </motion.div>
-          ))}
-        </motion.div>
+              {"Let's Work Together"}
+            </motion.h2>
 
-        <motion.div variants={fadeInUp} className="max-w-md mx-auto mb-12 sm:mb-16">
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              className="sm:w-auto bg-white text-black hover:bg-gray-200 rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-              onClick={() => {
-                const el = document.getElementById("work")
-                if (el) el.scrollIntoView({ behavior: "smooth" })
-              }}
-            >
-              View Work
-            </Button>
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={fadeInUp} className="max-w-2xl mx-auto">
-          <form className="space-y-4 sm:space-y-6 paragraph-text" onSubmit={handleSubmit}>
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-              <Input
-                placeholder="Name*"
-                name="name"
-                value={form.name}
-                onChange={handleInputChange}
-                className="bg-[#0d0d0d] border-gray-700 text-white placeholder-gray-400 rounded-lg h-12 sm:h-14 focus:border-white transition-all duration-300 text-sm sm:text-base"
-                required
-              />
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-              <Input
-                name="email"
-                type="email"
-                value={form.email}
-                onChange={handleInputChange}
-                placeholder="Email*"
-                className="bg-[#0d0d0d] border-gray-700 text-white placeholder-gray-400 rounded-lg h-12 sm:h-14 focus:border-white transition-all duration-300 text-sm sm:text-base"
-                required
-              />
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-              <Textarea
-                name="message"
-                value={form.message}
-                onChange={handleInputChange}
-                placeholder="Message*"
-                rows={5}
-                className="bg-[#0d0d0d] border-gray-700 text-white placeholder-gray-400 rounded-lg resize-none focus:border-white transition-all duration-300 text-sm sm:text-base min-h-[120px] sm:min-h-[150px]"
-                required
-              />
-            </motion.div>
+            <motion.p variants={fadeInUp} className="text-lg sm:text-xl paragraph-text text-gray-400 mb-8 sm:mb-12">
+              Have a project in mind? {"I'm"} just a message away.
+            </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              variants={staggerContainer}
+              className="flex flex-col sm:flex-row paragraph-text justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-12 mb-12 sm:mb-16"
             >
-              <Button
-                type="submit"
-                className="w-full bg-white text-black font-bold hover:bg-gray-200 rounded-full py-5 sm:py-7 text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-                disabled={sending}
-              >
-                {sending ? "Sending..." : sent ? "Sent!" : "Submit Now"}
-              </Button>
+              {[
+                { icon: Users, text: "24/7 Full Time Support" },
+                { icon: Globe, text: "Available Worldwide" },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  variants={fadeInUp}
+                  whileHover={{ scale: 1.05 }}
+                  className="flex items-center space-x-3"
+                >
+                  <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
+                  <span className="text-gray-300 text-sm sm:text-base">{item.text}</span>
+                </motion.div>
+              ))}
             </motion.div>
-          </form>
-        </motion.div>
-      </div>
-    </motion.section>
+
+            <motion.div variants={fadeInUp} className="max-w-md mx-auto mb-12 sm:mb-16">
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Button
+                  className="sm:w-auto bg-white text-black hover:bg-gray-200 rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                  onClick={() => {
+                    const el = document.getElementById("work")
+                    if (el) el.scrollIntoView({ behavior: "smooth" })
+                  }}
+                >
+                  View Work
+                </Button>
+              </motion.div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="max-w-2xl mx-auto">
+              <form className="space-y-4 sm:space-y-6 paragraph-text" onSubmit={handleSubmit}>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+                  <Input
+                    placeholder="Name*"
+                    name="name"
+                    value={form.name}
+                    onChange={handleInputChange}
+                    className="bg-[#0d0d0d] border-gray-700 text-white placeholder-gray-400 rounded-lg h-12 sm:h-14 focus:border-white transition-all duration-300 text-sm sm:text-base"
+                    required
+                  />
+                </motion.div>
+
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+                  <Input
+                    name="email"
+                    type="email"
+                    value={form.email}
+                    onChange={handleInputChange}
+                    placeholder="Email*"
+                    className="bg-[#0d0d0d] border-gray-700 text-white placeholder-gray-400 rounded-lg h-12 sm:h-14 focus:border-white transition-all duration-300 text-sm sm:text-base"
+                    required
+                  />
+                </motion.div>
+
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+                  <Textarea
+                    name="message"
+                    value={form.message}
+                    onChange={handleInputChange}
+                    placeholder="Message*"
+                    rows={5}
+                    className="bg-[#0d0d0d] border-gray-700 text-white placeholder-gray-400 rounded-lg resize-none focus:border-white transition-all duration-300 text-sm sm:text-base min-h-[120px] sm:min-h-[150px]"
+                    required
+                  />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <Button
+                    type="submit"
+                    className="w-full bg-white text-black font-bold hover:bg-gray-200 rounded-full py-5 sm:py-7 text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                    disabled={sending}
+                  >
+                    {sending ? "Sending..." : sent ? "Sent!" : "Submit Now"}
+                  </Button>
+                </motion.div>
+              </form>
+            </motion.div>
+          </div>
+        </motion.section>
 
         {/* Footer */}
         <motion.footer
