@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom"
 
 import { FaBehance } from "react-icons/fa";
 
-import heroimage from "@/assets/images/image-4.png"
+import heroimage from "@/assets/images/raff.png"
 import sideimage from "@/assets/images/image-5.jpeg"
 import cardimage1 from "@/assets/images/image-6.png"
 import cardimage2 from "@/assets/images/image-7.png"
